@@ -7,15 +7,35 @@ class Tab3Card extends StatelessWidget {
     return Card(
       color: Colors.white,
       shadowColor: Colors.amber[500],
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          // children: <Widget>[
-          //   Icon(choice.icon, size: 128.0, color: textStyle.color),
-          //   Text(choice.title, style: textStyle),
-          // ],
-        ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          SizedBox(
+            height: 5,
+          ),
+          AppBar(
+            title: Text('རིམ་ལུགས་ཀྱི་སྐོར།'),
+            backgroundColor: Colors.orange[800],
+          ),
+          SizedBox(
+            height: 5,
+          ),
+          AppBar(
+            title: Text('མི་མང་གི་དོན་ལུ་རིམ་ལུགས་བཟོ་མི།'),
+            backgroundColor: Colors.orange[800],
+          ),
+          SizedBox(
+            height: 5,
+          ),
+          AppBar(
+            title: Text('རིམ་ལུགས་ཀྱི་ནང་དོན་བཟོ་མི།'),
+            backgroundColor: Colors.orange[800],
+          ),
+          SizedBox(
+            height: 5,
+          )
+        ],
       ),
     );
   }
