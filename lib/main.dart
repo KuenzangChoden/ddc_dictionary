@@ -1,3 +1,6 @@
+import 'tab2_card.dart';
+import 'tab1_card.dart';
+import 'tab3_card.dart';
 import 'package:flutter/material.dart';
 
 class TabbedAppBarInterface extends StatelessWidget {
@@ -8,7 +11,7 @@ class TabbedAppBarInterface extends StatelessWidget {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.amber[400],
+            backgroundColor: Colors.green[700],
             centerTitle: true,
             title: const Text(
               'རྫོང་ཁའི་ཚིག་མརྫོད།',
@@ -20,16 +23,18 @@ class TabbedAppBarInterface extends StatelessWidget {
             bottom: TabBar(
               isScrollable: true,
               tabs: [
-                Tab(icon: Icon(Icons.help)),
+                Tab(
+                  icon: Icon(Icons.cloud_circle),
+                ),
                 Tab(icon: Icon(Icons.collections_bookmark)),
                 Tab(icon: Icon(Icons.info)),
               ],
             ),
           ),
           body: TabBarView(children: [
-            Text('tab 1'),
-            Text('tab 2'),
-            Text('tab 3'),
+            (Tab1Card()),
+            (Tab2Card()),
+            (Tab3Card()),
           ]),
         ),
       ),

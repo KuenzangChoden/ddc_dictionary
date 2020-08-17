@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ChoiceCard extends StatelessWidget {
+class Tab3Card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // final TextStyle textStyle = Theme.of(context).textTheme.headline4;
